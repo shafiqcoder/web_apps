@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+
+
+<body>
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+    <label><b>Full Name</b></label>
+    <input type="text" placeholder="Enter your full name" name="fName" id="fName">
+    <label><b>UserName</b></label>
+    <input type="text" placeholder="Enter UserName" name="uName" id="uName">
+
+    <label><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="pw" id="pw" required>
+    <hr>
+    <button type="submit" onclick="register()">Register</button>
+    <div class="container">
+
+        <p>Already have an account? <a>Sign in</a>.</p>
+    </div>
+    <script src="index.js">
+    </script>
+
+    <p id="loading"></p>
+    <div class="container" id="myDiv">
+        UserName: <input type="text" id="uName" /><br /><br /> Password: <input type="password" id="pw" /><br /><br />
+        <button type="submit" id="myBtn" onclick="login()">Login</button>
+    </div>
+    <div id="sign">
+        <button type="submit" id="myBtn" onclick="signin()">Sign in</button>
+    </div>
+    <h3>Result:</h3>
+    <p id="result"></p>
+</body>
+
+</html>
