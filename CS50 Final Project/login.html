@@ -1,0 +1,164 @@
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>JS Bin</title>
+    <style>
+        body {
+            padding-top: 50px
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 100px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            width: 100%;
+        }
+
+        .styled-table th {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+
+        }
+
+        .styled-table th,
+        .styled-table td {
+            padding: 12px 15px;
+        }
+
+        .styled-table tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .styled-table tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .styled-table tr:last-of-type {
+            border-bottom: 2px solid #009879;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+
+
+
+        input {
+            width: auto;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+
+
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+            text-shadow: 1px 1px 2px #000000;
+        }
+
+        h2 {
+            text-align: center;
+            color: black;
+            text-shadow: 0.5px 0.5px 1px #000000;
+            font-size: 20px;
+        }
+
+        body {
+            counter-reset: Serial;
+            /* Set the Serial counter to 0 */
+        }
+
+        table {
+            border-collapse: separate;
+        }
+
+        tr td:first-child:before {
+            counter-increment: Serial;
+            /* Increment the Serial counter */
+            content: "Adm No : "counter(Serial);
+            /* Display the counter */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Student Management System</h1>
+    <h2> Please enter the details of students </h2>
+    <div class="input">
+        <input type="text" id="text1" placeholder="Student's Name"></input>
+        <input type="text" id="text2" placeholder="Father's Name"></input>
+        <input type="text" id="text3" placeholder="Contact Number"></input>
+        <input type="text" id="text4" placeholder="Address"></input>
+        <input class="btn" type="button" id="button1" value="Submit" onclick="add_element_to_array();"></input>
+        <input class="btn" type="button" id="button2" value="Display" onclick="display_array()"></input>
+    </div>
+    <table class="styled-table" id="table" border="1">
+        <colgroup>
+            <col span="1" style="width: 10%;">
+            <col span="1" style="width: 20%;">
+            <col span="1" style="width: 20%;">
+            <col span="1" style="width: 20%;">
+        </colgroup>
+        <!-- The Row Number 0 -->
+        <tr>
+            <th>Admission Number</th>
+            <th>Student's Name</th>
+            <th>Father's Name</th>
+            <th>Contact Number</th>
+            <th>Address</th>
+        </tr>
+        <!-- End Row Number 0 -->
+        <!--
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            -->
+    </table>
+
+
+    <div class="result" id="Result"></div>
+    <script src="login.js"></script>
+</body>
+
+</html>

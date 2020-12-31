@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <div class="form">
+        <div class="tab-header">
+            <div class="active">Sign up </div>
+            <div>Sign in</div>
+        </div>
+        <div class="tab-content">
+            <div class="tab-body active">
+                <div class="form-element">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="form-element">
+                    <input type="username" placeholder="Username">
+                </div>
+                <div class="form-element">
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="form-element">
+                    <button type="submit" id="Signup" onclick="addUser()">Sign up</button>
+                </div>
+            </div>
+            <div class="tab-body">
+                <div class="form-element">
+                    <input type="text" id="userName" placeholder="Email / Username">
+                </div>
+                <div class="form-element">
+                    <input type="password" id="pass" placeholder="Password">
+                </div>
+                <div class="form-element">
+                    <input type="checkbox" id="remember_me">
+                    <label for="remember_me">Remember me</label>
+                </div>
+                <div class="form-element">
+                    <button type="submit" id="Signin" onclick="login()">Sign in</button>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

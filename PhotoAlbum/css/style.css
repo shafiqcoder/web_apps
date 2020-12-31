@@ -1,0 +1,26 @@
+body{
+    color: #e9e644; font-family: 'Rouge Script', cursive; font-size: 19px; font-weight: normal; line-height: 10px; margin: 0 0 50px; text-align: center; text-shadow: 1px 1px 2px #082b34;
+background-color:rgb(59, 24, 24);
+}
+.gallery{
+    align-items:center;
+    margin:10px 50px;
+}
+.gallery img{
+    align-items:center;
+    bottom: 0;
+    width:100px;
+    height:120px;
+    padding:0.5%;
+    left:0%;
+    border-radius:30px;
+    border-width: 4px;
+    filter:grayscale(100%);
+    transition:1s;
+
+}
+
+.gallery img:hover{
+    filter:grayscale(0);
+    transform: scale(1.1);
+}
