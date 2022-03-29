@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;600&family=Ubuntu+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* it is by default zero margins.. we will add where we need */
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 26%;
+    border: 3px solid white;
+    border-radius: 50px;
+    margin: 5px;
+}
+.nav-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: cornsilk;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    color: red;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.rightNav{
+    padding: 0 23px;
+    width: 30%;
+    text-align: right;
+}
+/* Id is search */
+#search{
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid gray;
+    border-radius: 9px;
+}
+.background{
+    background:rgba(0,0,0,0) url('../img/bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+
+}
+.firstSection{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: left;
+    align-items:normal ;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80;
+    padding-top: 80px;
+}
+.firstHalf{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* you are targetting an image in second half.. indicate img here */
+.secondHalf img{
+    width: 70%;
+    border:4px solid white;
+    border-radius: 100px;
+    display: block;
+    margin: auto;
+
+}
+
+.text-big{
+    font-size: 25px;
+}
+
+.text-small{
+    font-size: 18px;
+}
+
+.btn{
+    padding: 8px 20px;
+    margin: 7px 0;
+    border: 2px solid wheat;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn-sm{
+    padding: 3px 10px;
+    vertical-align: middle;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.paras{
+    padding: 0px 65px;
+}
+/* DRY- Dont repeat yourself */
+
+.section-left{
+ flex-direction: row-reverse;
+}
+
+.thumbnail img{
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 19px;
+}
+
+.contact{
+    background-color: rgb(236, 232, 228);
+    height: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.text-center{
+    text-align: center;
+    padding-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+}
+.form{
+    max-width: 700px;
+    margin: 0px auto;
+}
+
+.form-input{
+    margin: 15px 0;
+    padding: 5px 3px;
+    width: 100%;
+    height: auto;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+}
+
+.btn-dark{
+    color: solid black;
+    border: 3px black;
+    border-radius: 3px 4px;
+    background-color: darkcyan;
+    box-shadow: darkgray;
+}
+
+.text-footer{
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top:15px;
+}
+
+.line{
+    width:33px;
+    background-color: seashell;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+
+@media only screen and (max-width: 976px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        height: 490px;
+        flex-direction: column;
+        transition: all 0.6s ease-out;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .section{
+        flex-direction: column;
+    }
+
+
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 72px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+    .contact{
+        height: auto;
+    }
+    .text-small{
+        text-align: center;
+        flex-direction: column;
+    }
+    .text-big{
+        text-align: center;
+        flex-direction: column;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .paras{
+        padding: 0px;
+    }
+    .secondHalf img{
+        max-width: 30%;
+    }
+    .btn{
+        padding: 3px 3px;
+        margin: 7px 0;
+        border: 6px solid wheat;
+        border-radius: 14px;
+        font-size: 13px;
+        cursor: pointer;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .form-input{
+        margin: 16px 0px;
+        padding: 0px 0px;
+        width: 96%;
+        height: auto;
+        font-size: 17px;
+        border: 2px solid grey;
+        border-radius: 6px;
+    }
+}
